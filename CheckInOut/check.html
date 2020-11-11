@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckIn & CheckOUt</title>
+
+    <style>
+        .container {
+            width: 30%;
+            background-color: rgb(196, 139, 18);
+            box-shadow: 0 2px 4px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        button {
+            padding: .5rem 1rem;
+            margin: 1rem;
+            cursor: pointer;
+            background-color: rgb(176, 236, 10);
+            outline: none;
+            border: none;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="checkIn()"> CheckIn</button>
+        <button onclick="checkOut()">CheckOut</button>
+
+
+        <p id="checkInTime">CheckIn :</p>
+        <p id="checkOutTime">CheckOut :</p>
+    </div>
+
+    <script src="check.js"></script>
+</body>
+
+</html>
