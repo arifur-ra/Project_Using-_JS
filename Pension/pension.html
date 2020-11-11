@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Pension </title>
+    <style>
+        .container {
+            padding: 2rem;
+            width: 25%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(231, 182, 21);
+        }
+
+        input {
+            margin: .5rem 0;
+            padding: .5rem 1rem;
+            outline: none;
+            border: none;
+            border-radius: .35rem;
+        }
+
+        button {
+            padding: .5rem 1rem;
+            border-radius: .35rem;
+            border: none;
+            outline: none;
+            background-color: rgb(218, 26, 19);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+
+            background-color: rgb(36, 218, 19);
+            color: rgb(61, 1, 1);
+            transition: .6s;
+
+        }
+
+        ::placeholder {
+            text-align: center;
+        }
+
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Check your Pension after retires</h3>
+        <input type="number" id="currentAge" placeholder="Your Current Age">
+        <input type="number" id="retiresAge" placeholder="Your retires Age">
+        <input type="number" id="salary" placeholder="Salary in Month">
+        <input type="number" id="percent" placeholder="saved in Percent(%)">
+
+        <button onclick="calculatePension()"> Click for Pension</button>
+
+        <h4 id="result"></h4>
+    </div>
+
+
+
+
+
+    <script src="pension.js"></script>
+</body>
+
+</html>

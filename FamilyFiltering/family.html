@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Filtering</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: rgb(192, 206, 200); */
+        }
+
+        table {
+            margin: 0 auto;
+            padding: 2rem;
+            border-collapse: collapse;
+            /* border: 1px solid white; */
+            text-align: center;
+
+        }
+
+        th,
+        td {
+            margin: 0 1rem;
+            padding: .5rem 1rem;
+            color: yellow;
+            font-weight: bold;
+
+        }
+
+        td {
+            display: flex;
+            flex-direction: column;
+            /* border-bottom: 1px solid red; */
+            padding: 1rem 1rem;
+
+        }
+
+
+
+
+
+
+
+        .container {
+            width: 80%;
+            height: 100vh;
+            margin: 1rem auto;
+            padding: 2rem 5rem;
+            display: flex;
+            flex-direction: column;
+            background-image: linear-gradient(300deg, #992890, #473535, #203f20, black, #1b577a, #330303, #383804, #5a0553);
+
+            /* background-color: rgb(7, 151, 91); */
+
+        }
+
+        input {
+            width: 30%;
+            margin: 1rem auto;
+            padding: .5rem 0;
+            border-radius: .35rem;
+            outline: 0;
+            border: 2px solid #250101;
+        }
+
+        button {
+            width: 30%;
+            margin: 1rem auto;
+            padding: .5rem 1.5rem;
+            border: 0;
+            background-color: #4a4b06;
+            color: #f0a911;
+            outline: 0;
+            border-radius: .3rem;
+            font-weight: 800;
+            cursor: pointer;
+
+        }
+
+        .none {
+            display: none;
+        }
+
+        label {
+            text-align: center;
+            font-size: 1.2rem;
+            color: yellow;
+            font-weight: bold;
+        }
+
+        ::placeholder {
+            text-align: center;
+            color: black;
+            font-size: 1rem;
+            padding: .25rem;
+        }
+
+
+        p {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+
+        @media screen and (max-width: 430px) {
+            .container {
+                width: 100%;
+            }
+
+            input {
+                width: 80%;
+
+
+            }
+
+            button {
+                width: 80%;
+                font-size: .7rem;
+
+            }
+
+            label {
+                color: #fffb14;
+            }
+
+            ::placeholder {
+                font-size: .6rem;
+            }
+
+
+            h4 {
+                width: 100%;
+                margin: 0 auto;
+
+            }
+
+            table {
+
+                font-size: .8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label> Search Your Info</label>
+        <input type="text" id="code" placeholder="Write code (01 - 10)">
+        <button class="none" onclick="showDetails()">Show Details</button>
+
+        <button onclick="filterDetails()">Show Details</button>
+
+
+        <h4 id="display">
+        </h4>
+    </div>
+
+
+
+
+
+    <script src="family.js"></script>
+</body>
+
+</html>

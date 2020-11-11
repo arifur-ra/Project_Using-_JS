@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Sorting & Filtering</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #292a1b;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 0 auto;
+            padding: 2rem;
+
+        }
+
+        th,
+        td {
+            text-align: center;
+            padding: .35rem 1rem;
+            border-bottom: #777 solid 1px;
+            white-space: nowrap;
+            font-size: 1rem;
+            color: #96941a;
+            font-weight: bold;
+
+
+        }
+
+        tr:nth-child(even) {
+            background-color: lightblue;
+
+        }
+
+
+
+        .btn {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: .35rem 1rem;
+            color: red;
+            font-size: 1rem;
+            font-weight: bold;
+
+        }
+
+        .control button:focus {
+            background-color: rgb(42, 2, 9);
+            color: white;
+            font-weight: 900;
+        }
+
+
+        .control {
+            width: 100%;
+            margin: 1rem auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .control button {
+            margin-top: 1rem;
+            padding: .45rem 1.3rem;
+            border-radius: .25rem;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            background-color: #96941a;
+            color: rgb(61, 10, 1);
+            font-weight: bold;
+        }
+
+        label {
+            font-size: 1.5rem;
+            color: red;
+            font-weight: bold;
+            margin: 2rem 0 0 4rem;
+        }
+
+        input {
+            background-color: #fff;
+            padding: .45rem 1rem;
+            border-radius: .5rem;
+            outline: none;
+            margin-left: 2rem;
+        }
+
+        h1 {
+            color: #96941a;
+            text-align: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Assignments </h1>
+    <div class="container">
+        <label for="filter">Type a word to Filter</label>
+        <input type="text" id="filter">
+        <div class="control">
+            <button onclick="dataFilterNames()">Filter Name</button>
+            <button onclick="dataFilterGrade()">Filter Grade</button>
+            <!-- <button onclick="dataFilterRanks()">Filter Rank</button> -->
+            <button onclick="backToOriginal()">set to Original</button>
+
+
+        </div>
+    </div>
+    <table id="table">
+        <thead>
+
+            <tr>
+                <th><button class="btn" onclick="showDataHandler()">Data</button></th>
+                <th><button class="btn" onclick="sortByNameHandler()">Sort By Name</button>
+                </th>
+                <th> <button class="btn" onclick="sortByGradeHandler()">Sort By Grade</button>
+                </th>
+                <!-- <th><button class="btn" onclick="sortByRankHandler()">Rank</button></th> -->
+            </tr>
+
+        </thead>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

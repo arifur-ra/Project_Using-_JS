@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    /* font-family: monospace; */
+    font-family: 'Sansita Swashed', cursive;
+
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(./image/sh.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.main {
+    width: 30%;
+    margin: 6rem auto;
+    text-align: center;
+    /* background-color: rgb(71, 71, 25); */
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 2rem;
+    border-radius: 1rem;
+    /* box-shadow: 0px 0px 2px rgb(104, 4, 4); */
+
+}
+
+hr {
+    height: 0.35rem;
+    background-color: rgb(255, 243, 243);
+}
+
+h1 {
+    color: rgb(255, 24, 24);
+    font-weight: 900;
+    font-size: 2rem;
+    /* background-color: black; */
+    padding: 0.75rem;
+    /* box-shadow: 0px 0px 2px; */
+    border-radius: 0.5rem;
+}
+
+
+
+input {
+    margin: 1rem;
+    padding: 0.75rem;
+    outline: none;
+    border: 1px solid rgb(3, 0, 0);
+    /* background-color: rgb(51, 32, 32); */
+}
+
+
+button {
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(255, 1, 1);
+    background-color: rgb(53, 26, 26);
+}
+
+button:hover {
+    color: rgb(8, 0, 0);
+    background-color: rgb(235, 231, 5);
+    transition: 0.6s;
+}
+
+::placeholder {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-position: center;
+    }
+
+    div.main {
+        width: 90%;
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 790px) {
+    body {
+        background-position: center;
+    }
+
+    div.main {
+        width: 50%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body {
+        background-position: center;
+    }
+
+    div.main {
+        width: 27%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+}
