@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Storage & JSON Object</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>To Do List</h1>
+
+        <form action="#">
+            <label for="input"> Add item</label>
+            <input type="text" id="input" placeholder="Item Name" />
+            <button onclick="addItem(event)">Add item</button>
+
+            <label for="input2"> Delete item</label>
+            <input type="text" id="input2" placeholder="Item Name" />
+            <button onclick="deleteItem(event)">Remove item</button>
+
+            <label for="input2"> Replace item</label>
+            <input type="text" id="replaceValue" placeholder="replace Item" />
+            <input type="text" id="newValue" placeholder=" New Item" />
+
+            <button onclick="replaceItem(event)">Replace item by</button>
+        </form>
+    </div>
+
+    <button class="btn" onclick="showItem()">Show items List</button>
+
+    <div class="warn" id="message"></div>
+
+    <div class="listOfitem">
+        <h2>List Of Item</h2>
+        <ul id="ul">
+        </ul>
+    </div>
+    <script src="localstorage.js"></script>
+</body>
+
+</html>
