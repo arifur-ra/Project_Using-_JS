@@ -8,7 +8,7 @@
 * a red box will alert for 3 sec
 * Not found
 * if you could find it
-* a blue box aill alert found in index #index_number
+* a blue box all alert found in index #index_number
 *
 * tips:
 * use function

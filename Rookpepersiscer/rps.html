@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <script src="https://kit.fontawesome.com/176b62e972.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h2>A simple <i>rock, paper, scissors</i> game</h2>
+    </header>
+
+    <div id="main">
+        <div class="score-display">
+            <div>
+                <p><i class="fas fa-user"></i> User score</p>
+                <p class="player-score">0</p>
+            </div>
+            <div>
+                <p><i class="fas fa-tv"></i> Computer score</p>
+                <p class="computer-score">0</p>
+            </div>
+        </div>
+
+        <div class="display-outcome"></div>
+
+        <div class="player-choice">
+            <i class="far fa-hand-rock rock" onclick="userPlay('rock')"></i>
+            <i class="far fa-hand-paper paper" onclick="userPlay('paper')"></i>
+            <i class="far fa-hand-scissors scissors" onclick="userPlay('scissors')"></i>
+        </div>
+    </div>
+    <footer>@CeateBy-ararif2020</footer>
+
+    <!-- Javascript -->
+    <script src="rps.js"></script>
+</body>
+
+</html>
