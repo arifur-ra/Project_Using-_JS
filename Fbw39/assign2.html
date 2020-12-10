@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <title>DOM Selector</title>
+
+    <style>
+      body {
+        background-color: rgb(83, 100, 80);
+      }
+      .message {
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        background-color: rgb(231, 41, 41);
+        color: white;
+        font-weight: 800;
+        position: absolute;
+        padding: 1rem;
+        visibility: hidden;
+      }
+      button {
+        background-color: rgb(102, 9, 9);
+        border-radius: 0.25rem;
+        color: yellow;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 900;
+        font-family: "Courier New", Courier, monospace;
+      }
+      .listofName {
+        background-color: rgb(104, 10, 3);
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+        box-shadow: 0 0 5px;
+        color: rgb(247, 225, 225);
+        font-size: 1rem;
+        font-weight: bold;
+        list-style: none;
+      }
+      i {
+        float: right;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 30vw;
+        margin: 0 auto;
+        padding: 2rem;
+        cursor: pointer;
+        background-color: rgb(185, 187, 51);
+      }
+      input,
+      button {
+        margin: 1rem 0;
+        padding: 0.5rem 0;
+      }
+      ::placeholder,
+      h2 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message"></div>
+    <hr />
+
+    <div class="container">
+      <h2>Fbw39 Participant</h2>
+      <button type="button" class="show">Show Name</button>
+      <input type="text" name="name" id="names" placeholder="Write a Name" />
+      <button type="button" class="add">Add Name</button>
+      <ul class="nameList"></ul>
+    </div>
+
+    <script src="assign2.js"></script>
+  </body>
+</html>
